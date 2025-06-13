@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install packages
+        run: bun install
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Typecheck code
+        run: bun run typecheck
+
+      - name: Build
+        run: bun run build
+        # you might wanna test on our vercel instance so can run your test suite with your enviroment variables
+        # look at vercel-tests.yml
+
+      - name: Test
+        run: bun run test
