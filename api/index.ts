@@ -1,23 +1,11 @@
-// eslint-disable-next-line
-// @ts-expect-error
-
+// @ts-expect-error - Missing type declarations for compiled JavaScript
 import app from "../dist/src/index.js";
-import type { Elysia } from "elysia";
 
-// Uncomment this to use edge runtime
+export const GET = app.handle;
+export const POST = app.handle;
+export const PATCH = app.handle;
+export const PUT = app.handle;
+export const OPTIONS = app.handle;
+
+// Uncomment to use edge runtime
 // export const runtime = "edge";
-
-// help from hono <3:
-// https://github.com/honojs/hono/blob/main/src/adapter/vercel/handler.ts
-export const handle =
-  (app: Elysia) =>
-  (req: Request): Response | Promise<Response> => {
-    return app.handle(req);
-  };
-const handler = handle(app);
-
-export const GET = handler;
-export const POST = handler;
-export const PATCH = handler;
-export const PUT = handler;
-export const OPTIONS = handler;
