@@ -57,3 +57,6 @@ Inspired by:
 - [Elysia Build For Production](https://elysiajs.com/tutorial.html#build-for-production)
 - [Hono Vercel Adapter](https://github.com/honojs/hono/blob/main/src/adapter/vercel/handler.ts)
 - [Vercel E2E Testing Guide](https://vercel.com/guides/how-can-i-run-end-to-end-tests-after-my-vercel-preview-deployment)
+- [Deploy A Hono API to Render, fly.io, Vercel and Cloudflare Workers](https://www.youtube.com/watch?v=QDgdUtd6ZRs)
+- [Vercel Functions Documentation](https://vercel.com/docs/functions?framework=other)
+- [Hono Vercel Documentation](https://hono.dev/docs/getting-started/vercel)
