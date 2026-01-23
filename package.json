@@ -27,7 +27,7 @@
 		"eslint": "^9.28.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-plugin-prettier": "^5.4.1",
-		"globals": "^16.2.0",
+		"globals": "^17.1.0",
 		"prettier": "^3.5.3",
 		"tsc-alias": "^1.8.10",
 		"tsx": "^4.19.1",
